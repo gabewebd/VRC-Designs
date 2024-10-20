@@ -1100,7 +1100,7 @@ td {
 }
 
 .projects-cards, .projects-cards1, .projects-cards2 {
-    transition: 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
   
 .projects-cards:hover .boxarrowinupright-icon,
