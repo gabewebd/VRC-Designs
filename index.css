@@ -1,0 +1,2000 @@
+/* general styling for buttons-red and buttons-brown*/
+
+.buttons-brown,
+.buttons-red {
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 32px;
+  height: 24px;
+  width: auto; /* Let width auto-resize */
+  min-width: 64px; /* Set minimum width to ensure button doesn't collapse */
+  text-decoration: none;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+
+  /* Smooth hover transition */
+  transition: padding 300ms ease-out, background-color 300ms ease-out,
+    color 300ms ease-out;
+}
+
+    .buttons-brown {
+    border: 2px solid #432e1f;
+    color: #432e1f;
+  }
+  
+  .buttons-red {
+    border: 2px solid #ed3d33;
+    color: #ed3d33;
+  }
+  
+  /* Hover effect for resizing and color change */
+  .buttons-brown:hover,
+  .buttons-red:hover {
+    background-color: #432e1f; /* Adjusted for buttons-brown */
+    color: #ffebc1;
+    padding-right: 64px; /* Increase right padding to make room for the arrow */
+  }
+  
+  .buttons-red:hover {
+    background-color: #ed3d33; /* Adjusted for buttons-red */
+    color: #ffebc1;
+  }
+  
+  /* Arrow positioning and smooth transition */
+  .buttons-brown:hover:after,
+  .buttons-red:hover:after {
+    content: url("images/ArrowRight.svg");
+    position: absolute;
+    left: 124px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-64%);
+    width: 24px; /* Adjust arrow size */
+    height: 24px;
+  }
+  
+  /* Ensuring the button container is spaced properly */
+  .button-portfolio-hire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px; /* Remove extra gap between elements */
+  }
+
+.button {
+    width: 87px;
+    position: relative;
+    line-height: 18.25px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.buttons-brown {
+    border: 2px solid #432e1f;
+    box-sizing: border-box;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    cursor: pointer;
+}
+.button1 {
+    width: 82px;
+    position: relative;
+    line-height: 18.25px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.buttons-red {
+    border: 2px solid #ed3d33;
+    box-sizing: border-box;
+    height: 61.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    cursor: pointer;
+    color: #ed3d33;
+}
+.button-portfolio-hire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #432e1f;
+    font-family: 'Sulphur Point';
+}
+
+/* end css for buttons */
+
+/* ---------------------- */
+
+/* css for nav */
+
+.vrc-white-1 {
+    width: 59.2px;
+    position: relative;
+    height: 44.4px;
+    object-fit: cover;
+}
+
+.vrc {
+    margin: 0;
+}
+
+.vrc-designs .vrc {
+    transition: color 300ms ease-out;
+}
+
+.vrc-designs:hover .vrc {
+    color: #ed3d33;
+}
+
+.vrc-designs {
+    position: relative;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.vrc-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+.home {
+    background-color: #000;
+    height: 61.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 300ms ease-out;
+}
+
+.home:hover {
+    color: #ed3d33;
+}
+
+.services {
+    background-color: #000;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contac {
+    position: relative;
+    line-height: 18.25px;
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    flex-wrap: wrap; /* Allow wrapping if content overflows */
+}
+
+.nav-right-stay {
+    flex: 1;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Sulphur Point';
+}
+
+.vrc-nav {
+    align-self: stretch;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 50px; /* Reduced padding to avoid overflow */
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Orbitron;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+
+/* Hamburger icon */
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smoother transitions */
+  }
+  
+  /* Mobile nav styles */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Initially off-screen */
+    height: 100%;
+    width: 200px;
+    background-color: black;
+    z-index: 1000;
+    flex-direction: column;
+    padding-top: 50px;
+    transition: left 0.3s ease-in-out; /* Transition for smooth effect */
+  }
+  
+  .mobile-menu .mobile-nav a {
+    padding: 32px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Sulphur Point';
+    transition: color 300ms ease-out;
+    cursor: pointer;
+  }
+
+  .mobile-menu .mobile-nav a:hover {
+    color: #ed3d33;
+  }
+
+  .hamburger-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .hamburger-icon.active span:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+  }
+  
+  .hamburger-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+
+/* end css for nav */
+
+/* -------------------------------- */
+
+/* css for home section */
+
+.i-am {
+    color: #131212;
+}
+.raphael {
+    color: #ed3d33;
+}
+.architect {
+    color: #432e1f;
+}
+.i-am-raphael-container {
+    flex: 1;
+    position: relative;
+    font-weight: 600;
+}
+.vrc-title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.vrc-title1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.vrc-title2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Styling the hr tag to look like a line */
+.line-child {
+    border: none;
+    border-top: 4px solid black; /* Adjust thickness and color */
+    width: 100%; /* Make it responsive */
+    max-width: 100%;
+    height: 0; /* Remove the default height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .line {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+.vrc-text {
+    flex: 1;
+    position: relative;
+}
+
+.vrc-text1 {
+    flex: 1;
+    position: relative;
+
+}.vrc-text2 {
+    flex: 1;
+    position: relative;
+}
+
+.vrc-text-design {
+    flex: 1;
+    position: relative;
+}
+
+.vrc-text-testi {
+    flex: 1;
+    position: relative;
+}
+
+.vrc-text-yor {
+    flex: 1;
+    position: relative;
+    font-size: 50px;
+}
+
+#envision1 .vrc {
+    font-size: 32px;
+}
+
+.vrc-title-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+    color: #131212;
+    font-family: 'Sulphur Point';
+}
+.vrc-home-card {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 68px 0px 18.5px 0px;
+    gap: 37.1px;
+}
+.chatleftquotefill-icon {
+    width: 100px;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.vrc-testimonial-preview {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.testimonial-home-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 118px;
+    font-size: 16px;
+    font-family: 'Sulphur Point';
+}
+.top-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 95px;
+    gap: 83px;
+}
+
+.left-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 84px;
+}
+.home-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+}
+.vrc-home-building-icon {
+    width: 849px;
+    position: relative;
+    height: 1053px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.home-section {
+    align-self: stretch;
+    background-color: #fff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 0px;
+    gap: 64px;
+    font-size: 72px;
+    color: #000;
+    font-family: Orbitron;
+}
+
+/* end css for home section */
+
+/* -------------------- */
+
+/* css for tagline section */
+
+.envision-cards {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative; /* Required for positioning the pseudo-element */
+    overflow: hidden;
+  }
+
+/* hover effects for envision-cards */
+
+.envision-cards::after {
+    content: "";
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/envision-cards.png"); /* Set background image initially */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    opacity: 0; /* Start with the image hidden */
+    transition: opacity 300ms ease; /* Smooth transition for opacity */
+    z-index: 0; /* Place it behind the content */
+    mix-blend-mode: hard-light; /* Apply blend mode */
+  }
+  
+  .envision-cards:hover::after {
+    opacity: 1; /* Show the background image on hover */
+  }
+
+
+.envision-container {
+    align-self: stretch;
+    height: 691px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.tagline-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 149px 0px;
+    background-image: url('images/tagline-container.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.tagline-section {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* end css for tagline section */
+
+/* ----------------------- */
+
+/* css for video frame */
+
+.video-frame {
+    align-self: stretch;
+    height: 798px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .video-frame iframe {
+    width: 100%; /* Make the iframe fill the width of the container */
+    height: 100%; /* Allow the height to adjust proportionally */
+  }
+
+/* end css for video frame */
+
+/* ---------------------- */
+
+/* css for about section*/
+
+
+.vrc-about-me {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.design-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+.my-design-philosophy {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.my-design-containers {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 116px;
+}
+.button-portfolio-hire1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #432e1f;
+}
+.left-container1 {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 159px;
+}
+.vrc-100 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.div2 {
+    width: 156px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.clients {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #000;
+}
+.div {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 64px;
+}
+.building-icon-2 {
+    width: 298px;
+    position: relative;
+    height: 262px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    gap: 85px;
+    text-align: center;
+    font-size: 64px;
+    color: #ed3d33;
+}
+.left-and-right {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 48px;
+    color: #000;
+}
+.about-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 40px;
+    gap: 60px;
+}
+.about-section {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 45px;
+    color: #ed3d33;
+}
+
+/* end css for about section */
+
+/* ------------------------- */
+
+/* css for services */
+
+.envision-without-logo-containe {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+}
+
+.span {
+    color: #000;
+}
+.title-text {
+    position: relative;
+    font-size: 64px;
+}
+.vrc-services-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.initial-consultation {
+    margin-bottom: 0px;
+}
+.initial-consultation-concept-d {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 21px;
+}
+
+.services-cards-layout {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 51px;
+    text-align: left;
+    font-size: 16px;
+}
+.exterior {
+    flex: 1;
+    border-radius: 4px;
+    background-color: #dadada;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.other {
+    align-self: stretch;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 16px;
+    color: #000;
+}
+.services-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+.services-section {
+    align-self: stretch;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 90px;
+}
+
+/* table styles */
+
+.basic-table thead,
+.standard-table thead,
+.premium-table thead {
+  align-self: stretch;
+  background-color: #432e1f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  color: #ffebc1;
+  border: none;
+}
+
+.standard-table thead {
+  background-color: #ed3d33;
+}
+
+td {
+  align-self: stretch;
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px 12px; /* Adjust padding as needed */
+  border: none; /* Ensure no borders */
+  margin: 0; /* Remove any margin */
+}
+
+.basic-table {
+    width: 281.3px;
+    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.14));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.standard-table {
+    width: 387.1px;
+    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.14));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ed3d33;
+}
+.premium-table {
+    width: 452.3px;
+    filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.14));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-table,
+.standard-table,
+.premium-table {
+  margin: 0; /* Ensure no margin around tables */
+  padding: 0; /* Ensure no padding around tables */
+  border-collapse: collapse;
+  transition: box-shadow 0.3s ease-in, border 0.3s ease-in; /* Add transition */
+}
+
+.standard-table:hover {
+    margin: 0; /* Ensure no margin around tables */
+    padding: 0; /* Ensure no padding around tables */
+    box-shadow: 12px 12px 0px #ed3d33;
+    border: 2px solid #ed3d33;
+    filter: none;
+  }
+  
+  .basic-table:hover,
+  .premium-table:hover {
+    margin: 0; /* Ensure no margin around tables */
+    padding: 0; /* Ensure no padding around tables */
+    box-shadow: 12px 12px 0px #432e1f;
+    border: 2px solid #432e1f;
+    filter: none;
+  }
+
+/* end css for services */
+
+/* -------------------- */
+
+/* css for projects section */
+
+
+.span {
+    color: #000;
+}
+.latest-projects {
+    color: #ed3d33;
+}
+.see-my-latest-container {
+    flex: 1;
+    position: relative;
+}
+
+.see-my-latest-container1 {
+    flex: 1;
+    position: relative;
+}
+
+.see-my-latest-container12 {
+    flex: 1;
+    position: relative;
+}
+
+.see-my-latest-projects {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.vrc-services-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+}
+.storey-dormitory {
+    flex: 1;
+    position: relative;
+    text-shadow: 0px 10.088235855102539px 12.61px rgba(0, 0, 0, 0.2);
+}
+.dorm-text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12.6px 0px;
+}
+.dorm-description {
+    align-self: stretch;
+    box-shadow: 0px 20.176471710205078px 30.26px rgba(0, 0, 0, 0.14);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 25.22px;
+}
+.project-description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.storey-dormitory-container {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.boxarrowinupright-icon {
+    width: 47.7px;
+    position: relative;
+    height: 47.7px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.button-open-tab-red {
+    width: 80.7px;
+    box-shadow: 7.336898326873779px 11.00534725189209px 9.17px rgba(0, 0, 0, 0.64);
+    border-radius: 40.35px;
+    background-color: #ffebc1;
+    height: 80.7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16.5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+.project-description1 {
+    align-self: stretch;
+    height: 302.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-open-tab-brown {
+    width: 80.7px;
+    box-shadow: 7.336898326873779px 11.00534725189209px 9.17px rgba(0, 0, 0, 0.64);
+    border-radius: 40.35px;
+    background-color: #ffebc1;
+    height: 80.7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16.5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+.projects-cards1 {
+    align-self: stretch;
+    border-radius: 60.53px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 70px 42px;
+    gap: 265px;
+    background-image: url('images/mall-brown.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.projects-cards2 {
+    align-self: stretch;
+    border-radius: 60.53px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 70px 42px;
+    gap: 265px;
+    background-image: url('images/apartment-red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.projects-cards {
+    align-self: stretch;
+    border-radius: 60.53px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 70px 42px;
+    gap: 265px;
+    background-image: url('images/dorm-red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.apartment-text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12.6px 0px;
+}
+
+.projects-cards-layout {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15.1px;
+    text-align: left;
+    font-size: 50.44px;
+    color: #fff;
+}
+.projects-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.projects-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 105px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 64px;
+    color: #432e1f;
+    font-family: 'Sulphur Point';
+}
+
+.projects-cards, .projects-cards1, .projects-cards2 {
+    transition: 300ms ease-in-out;
+}
+  
+.projects-cards:hover .boxarrowinupright-icon,
+.projects-cards1:hover .boxarrowinupright-icon,
+.projects-cards2:hover .boxarrowinupright-icon {
+    content: url("images/BoxArrowInUpRight-light.svg");
+    transition: 300ms ease-in-out;
+}
+  
+  .projects-cards:hover .button-open-tab-red,
+  .projects-cards2:hover .button-open-tab-red {
+    background-color: #ed3d33;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+  .projects-cards1:hover .button-open-tab-brown {
+    background-color: #432e1f;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+.projects-cards:hover  {
+    background-image: url("images/dorm-normal.png");
+    transition: 300ms ease-in-out; 
+    transition-delay: 100ms; 
+}
+
+.projects-cards1:hover {
+    background-image: url("images/mall-normal.png");
+    transition: 300ms ease-in-out;
+    transition-delay: 100ms;
+}
+
+.projects-cards2:hover {
+    background-image: url("images/apartment-normal.png");
+    transition: 300ms ease-in-out;
+    transition-delay: 100ms;
+}  
+
+
+
+/* end css for projects section */
+
+/* ------------------------- */
+
+/* css for testimonials */
+
+.vrc-testimonials-of-work {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.testimonials-without-button {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+    color: #ed3d33;
+}
+.chatleftquotefill-icon1 {
+    width: 62.6px;
+    position: relative;
+    height: 62.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.testimonial-person {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+.testimonial-person-with-icon {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 10.4px 20.9px;
+    gap: 31.3px;
+}
+.starfill-icon {
+    width: 31.3px;
+    position: relative;
+    height: 31.3px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20.9px;
+    gap: 10.4px;
+}
+.his-designs-are {
+    align-self: stretch;
+    position: relative;
+    font-size: 28px;
+}
+.testimonial {
+    align-self: stretch;
+    border-radius: 41.75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10.4px 15.7px 0px;
+    font-size: 26.09px;
+    color: #000;
+}
+.testimonials-cards-ryujin {
+    align-self: stretch;
+    box-shadow: 0px 10.436368942260742px 13.05px rgba(0, 0, 0, 0.2);
+    border-radius: 62.62px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 31.3px;
+    gap: 10.4px;
+    transition: box-shadow 0.3s ease-in;
+}
+.testimonial1 {
+    align-self: stretch;
+    border-radius: 41.75px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10.4px 15.7px 0px;
+    font-size: 26.09px;
+    color: #000;
+}
+.testimonials-cards-yor {
+    align-self: stretch;
+    box-shadow: 0px 10.436368942260742px 13.05px rgba(0, 0, 0, 0.2);
+    border-radius: 62.62px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 31.3px;
+    gap: 10.4px;
+    color: #ed3d33;
+    transition: box-shadow 0.3s ease-in;
+}
+.testimonials-all {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 15.9px;
+    gap: 51.4px;
+    text-align: left;
+    font-size: 46.96px;
+}
+.button-portfolio-hire2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    font-size: 24px;
+}
+.testimonials-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 56px;
+}
+.testimonials-section {
+    align-self: stretch;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 119px;
+}
+
+
+.testimonials-cards-ryujin:hover,
+.testimonials-cards-yor:hover {
+  box-shadow: 8px 8px 0px #000;
+}
+
+/* end css for testimonials section */
+
+/* ---------------------------- */
+
+/* css for contact section */
+
+
+.have-a-project {
+    margin: 0;
+}
+.lets-discuss {
+    margin: 0;
+    color: #ed3d33;
+}
+.have-a-project-container {
+    flex: 1;
+    position: relative;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.2));
+}
+.envision-text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.first-name-wrapper {
+    align-self: stretch;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.first-name {
+    flex: 1;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.last-name-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.companywork {
+    flex: 1;
+    position: relative;
+    line-height: 18.25px;
+}
+.user-details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+.message-input {
+    align-self: stretch;
+    background-color: #fff;
+    height: 151px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.message-content {
+    align-self: stretch;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px;
+    width: 100%;
+}
+.input-cards {
+    align-self: stretch;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.vector-icon {
+    width: 24px;
+    position: relative;
+    height: 18px;
+}
+.envelopefill {
+    width: 40px;
+    border-radius: 24px;
+    background-color: #432e1f;
+    height: 42px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.input-with-email-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.email-address-input-card {
+    align-self: stretch;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    width: 100%;
+}
+.envision-input-boxes {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+    font-size: 24px;
+    color: #7d7d7d;
+}
+.envision-without-logo-containe1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+}
+.envision-with-logo-container1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.envision-cards1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+}
+.send {
+    position: relative;
+    line-height: 24.65px;
+}
+.buttons-red-contact {
+    background-color: #ed3d33;
+    box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.64);
+    border-radius: 32.41px;
+    background-color: #ed3d33;
+    height: 83.2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24.3px 43.2px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.send-button {
+    height: 83.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32.41px;
+    color: #ffebc1;
+}
+.contact-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 78px 0px;
+    gap: 54px;
+    background-image: url('images/contact-container.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.contact-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 64px;
+    color: #fff;
+    font-family: 'Sulphur Point';
+}
+
+
+/* css form styles */
+
+.input-cards input,
+.input-cards textarea,
+.input-box input {
+  font-family: "Sulphur Point", sans-serif;
+}
+
+/* Make input boxes cover their containers */
+.first-name-wrapper input,
+.last-name-wrapper input,
+.message-input textarea,
+.input-box input {
+  width: 100%; /* Make width 100% of container */
+  box-sizing: border-box; /* Include padding and border in width */
+  border: none; /* Remove default border */
+  font-size: 20px;
+}
+
+#sendbutton {
+    font-family: "Sulphur Point";
+    color: #ffebc1;
+    font-size: 24px;
+  }
+
+
+/* end css for contact section */
+
+/* ------------------ */
+
+/* css for footer */
+
+  .spanf {
+    color: #fff;
+}
+.connectf {
+    color: #ed3d33;
+    align-self: stretch;
+}
+.lets-connectf {
+    flex: 1;
+    position: relative;
+}
+.lets-connect-textf {
+    width: 229.2px;
+    height: 38.1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.symbolsvg-icon {
+    width: 12.6px;
+    position: relative;
+    height: 12.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.gmail-symbolsvg-icon {
+    width: 12.6px;
+    position: relative;
+    height: 9.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.socialsf {
+    width: 39.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+.homef {
+    position: relative;
+    text-decoration: underline;
+    line-height: 5.56px;
+}
+.home1f {
+    border-radius: 9.12px;
+    height: 18.8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.services1f {
+    width: 27.4px;
+    position: relative;
+    text-decoration: underline;
+    line-height: 5.56px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9.7px;
+}
+.socials-nav-containerf {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17.1px;
+    font-size: 7.31px;
+    color: #000;
+}
+.connect-socials-navf {
+    align-self: stretch;
+    height: 56.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.connect-child {
+    border: none;
+    border-top: 1px solid black; /* Adjust thickness and color */
+    width: 100% ; /* Ensure it takes up full width */
+    align-self: stretch ;
+    margin: 10px 0px; /* Remove any margin */
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.copyright-2024 {
+    position: relative;
+}
+.vrc-copyright {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-size: 6.09px;
+    color: #000;
+}
+.connect {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9.7px;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16.4px 27.6px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 19.48px;
+    color: #432e1f;
+    font-family: 'Sulphur Point';
+}
+
+
+/* end css for footer */
+
+/* ------------------ */
+
+.desktop {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
+    color: #432e1f;
+    font-family: 'Sulphur Point';
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-cards, .projects-cards1, .projects-cards2 {
+        gap: 70px;
+    }    
+}
+
+@media screen and (max-width: 860px) {
+    .projects-cards, .projects-cards1, .projects-cards2 {
+        gap: 50px;
+    }
+
+    .storey-dormitory {
+        font-size: 42px;
+    }
+
+    .projects-section {
+        padding: 54px 50px;
+    }
+
+    .vrc-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .projects-cards, .projects-cards1, .projects-cards2 {
+        gap: 25px;
+    }
+
+    .storey-dormitory {
+        font-size: 28px;
+    }
+
+    .see-my-latest-container {
+        font-size: 16px;
+    }
+
+    .see-my-latest-container1 {
+        text-align: justify;
+    }
+
+    .projects-section {
+        padding: 54px 40px;
+    }
+
+    .top-container {
+        padding: 0px 50px;
+    }
+
+    .i-am-raphael-container {
+        font-size: 56px;
+    }
+
+    .testimonial-home-container {
+        padding: 0px 10px;
+    }
+
+    #vrc100 .vrc-text {
+        text-align: justify;
+    }
+
+    .have-a-project {
+        font-size: 48px;
+    }
+
+    .lets-discuss {
+        font-size: 48px;
+    }
+
+    .user-details {
+        flex-direction: column;
+    }
+
+    .vrc-title2 {
+        font-size: 38px;
+    }
+    
+} 
+
+@media screen and (max-width: 470px) {
+    .projects-cards, .projects-cards1, .projects-cards2 {
+        gap: 25px;
+    }
+
+    .storey-dormitory {
+        font-size: 32px;
+    }
+
+    .see-my-latest-container {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .projects-section {
+        padding: 54px 20px;
+    }
+
+    .testimonial-home-container {
+        padding: 0px
+    }
+
+    .i-am-raphael-container {
+        font-size: 43px;
+    }
+
+    .title-text {
+        font-size: 42px;
+    }
+
+    .vrc-text-yor {
+        font-size: 32px;
+    }
+
+    .vrc-text-testi {
+        text-align: justify;
+    }
+
+    .his-designs-are {
+        font-size: 16px;
+    }
+
+    .testimonials-cards-ryujin, .testimonials-cards-yor {
+        gap: 5px;
+    }
+
+    .stars {
+        gap: 10px;
+    }
+
+    .testimonial-person-with-icon {
+        gap: 10px;
+    }
+
+    .starfill-icon {
+        transform: scale(0.7);
+        width: auto;
+        height: auto;
+    }
+
+    .chatleftquotefill-icon1 {
+        transform: scale(0.7);
+    }
+
+    .envision-cards1 {
+        padding: 20px 50px;
+    }
+
+    .see-my-latest-container12 {
+        padding: 0 20px;
+        text-align: justify;
+    }
+
+    .vrc-title {
+        font-size: 28px;
+    }
+
+    .vrc-title-description .vrc-text, .design-description .vrc-text, .see-my-latest-container1, .see-my-latest-container12 {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .have-a-project, .lets-discuss {
+        font-size: 32px;
+    }
+
+    .first-name-wrapper input,
+    .last-name-wrapper input,
+    .message-input textarea,
+    .input-box input {
+      font-size: 16px;
+    }
+
+    .testimonials-all {
+        padding: 0px 10px;
+        gap: 45px;
+    } 
+
+    .building-icon-2 img {
+        transform: scale(0.3);
+    }
+
+} 
+
+@media screen and (max-width: 932px) {
+
+      /* Hide desktop nav */
+      .nav-container {
+        display: none;
+      }
+    
+      /* Show hamburger */
+      .hamburger-icon {
+        display: flex;
+      }
+    
+      /* Slide-in when active */
+      .mobile-menu.active {
+        left: 0; /* Slide the menu in from the left */
+      }
+}
+
+@media screen and (max-width: 800px) {
+    .vrc-home-building-icon {
+        display: none;
+    }
+
+    .home-container {
+        padding: 0px 0px 48px;
+    }
+
+    .about-container {
+        padding: 0px 0px 48px;
+    }
+
+    .testimonial-home-container {
+        padding: 0px 56px;
+    }
+
+    .vrc-text .vrc {
+        font-size: 48px;
+    }
+
+    .building-icon-2 {
+        transform: scale(0.8);
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .left-and-right {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 56px;
+    }
+
+    .about-container {
+        padding-bottom: 56px;
+        align-items: center;
+        justify-content: center
+    }
+
+    .building-icon-2 {
+        transform: scale(1);
+    }
+
+    .vrc-text .vrc {
+        font-size: 48px;
+    }
+
+    .services-section {
+        padding: 48px 50px;
+    }
+
+    .testimonials-section {
+        padding: 54px 50px;
+    }
+
+}
+
