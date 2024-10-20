@@ -1100,7 +1100,7 @@ td {
 }
 
 .projects-cards, .projects-cards1, .projects-cards2 {
-    transition: opacity 300ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
   
 .projects-cards:hover .boxarrowinupright-icon,
@@ -1122,19 +1122,19 @@ td {
   }
   
 .projects-cards:hover  {
-    background-image: url("images/dorm-normal.png");
+    content: url("images/dorm-normal.png");
     transition: 300ms ease-in-out; 
     transition-delay: 100ms; 
 }
 
 .projects-cards1:hover {
-    background-image: url("images/mall-normal.png");
+    content: url("images/mall-normal.png");
     transition: 300ms ease-in-out;
     transition-delay: 100ms;
 }
 
 .projects-cards2:hover {
-    background-image: url("images/apartment-normal.png");
+    content: url("images/apartment-normal.png");
     transition: 300ms ease-in-out;
     transition-delay: 100ms;
 }  
