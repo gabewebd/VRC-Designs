@@ -1041,6 +1041,7 @@ td {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+
 }
 
 .projects-cards {
@@ -1102,7 +1103,7 @@ td {
 }
 
 .projects-cards, .projects-cards1, .projects-cards2 {
-    transition: opacity 300ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
   
 .projects-cards:hover .boxarrowinupright-icon,
@@ -1131,7 +1132,7 @@ td {
 
 .projects-cards1:hover {
     background-image: url("images/mall-normal.png");
-    transition: opacity 300ms ease-in-out;
+    transition: 300ms ease-in-out;
     transition-delay: 100ms;
 }
 
@@ -1967,5 +1968,4 @@ body {
     }
 
 }
-
 
