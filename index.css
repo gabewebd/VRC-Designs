@@ -987,6 +987,7 @@ td {
     padding: 16.5px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: background-color 300ms ease-in-out;
 }
 
 .project-description1 {
@@ -1010,6 +1011,7 @@ td {
     padding: 16.5px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: background-color 300ms ease-in-out;
 }
 .projects-cards1 {
     align-self: stretch;
