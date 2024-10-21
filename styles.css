@@ -1817,7 +1817,7 @@ body {
     
 } 
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 490px) {
     .projects-cards, .projects-cards1, .projects-cards2 {
         gap: 25px;
     }
@@ -1840,11 +1840,11 @@ body {
     }
 
     .i-am-raphael-container {
-        font-size: 43px;
+        font-size: 40px;
     }
 
     .title-text {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .vrc-text-yor {
@@ -1852,7 +1852,7 @@ body {
     }
 
     .vrc-text-testi {
-        text-align: justify;
+        text-align: center;
     }
 
     .his-designs-are {
