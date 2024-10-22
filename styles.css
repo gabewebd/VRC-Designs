@@ -1998,3 +1998,66 @@ body {
 
 }
 
+@media print {
+    /* Remove background images */
+    * {
+      background-image: none !important;
+    }
+  
+    /* Remove symbols and other decorative elements */
+    .symbolsvg-icon,
+    .gmail-symbolsvg-icon,
+    .chatleftquotefill-icon,
+    .chatleftquotefill-icon1,
+    .starfill-icon,
+    .vector-icon,
+    .envelopefill,
+    .button-open-tab-brown,
+    .button-open-tab-red,
+    .vrc-home-building-icon,
+    .building-icon-2,
+    .vrc-nav,
+    .mobile-menu, 
+    .hamburger-icon,
+    .video-frame {
+      display: none;
+    }
+
+    .see-my-latest-container, .his-designs-are {
+        font-size: 24px;
+    }
+  
+    /* Other potential print-related styles */
+    body {
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+  
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .basic-table th, .premium-table th {
+        color: #432e1f;
+    }
+
+    .standard-table th {
+        color: #ed3d33;
+    }
+
+    .socials-nav-containerf {
+        justify-content: center;
+    }
+
+    .dorm-description, .storey-dormitory {
+        box-shadow: none;
+        color: #000;
+        text-shadow: none;
+    }
+
+    .buttons-red-contact, .input-cards, .email-address-input-card {
+        box-shadow: none;
+    }
+ }
+
