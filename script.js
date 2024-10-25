@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  var buttonOpenTabRedContainer2 = document.getElementById("buttonOpenTabRedContainer2");
+  var buttonOpenTabRedContainer2 = document.getElementById("buttonOpenTabRedContainer");
   if (buttonOpenTabRedContainer2) {
       buttonOpenTabRedContainer2.addEventListener("click", function () {
           window.open(" https://drive.google.com/drive/folders/1aUU4z3rIu7fPvRggRIKemJL1j9aJZ_A7?usp=drive_link");
