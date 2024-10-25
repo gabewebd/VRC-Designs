@@ -173,6 +173,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  var buttonsBrownContainer = document.getElementById("buttonsBrownContainerAbout");
+  if (buttonsBrownContainer) {
+    buttonsBrownContainer.addEventListener("click", function () {
+      window.open(
+        "https://drive.google.com/drive/folders/1aUU4z3rIu7fPvRggRIKemJL1j9aJZ_A7?usp=sharing"
+      );
+    });
+  }
+
+  var buttonsRedContainer = document.getElementById("buttonsRedContainerAbout");
+  if (buttonsRedContainer) {
+    buttonsRedContainer.addEventListener("click", function () {
+      window.open(
+        "https://www.facebook.com/profile.php?id=100011104877211&mibextid=ZbWKwL"
+      );
+    });
+  }
+
+    var buttonsBrownContainer = document.getElementById("buttonsBrownContainerTestimonials");
+  if (buttonsBrownContainer) {
+    buttonsBrownContainer.addEventListener("click", function () {
+      window.open(
+        "https://drive.google.com/drive/folders/1aUU4z3rIu7fPvRggRIKemJL1j9aJZ_A7?usp=sharing"
+      );
+    });
+  }
+
+  var buttonsRedContainer = document.getElementById("buttonsRedContainerTestimonials");
+  if (buttonsRedContainer) {
+    buttonsRedContainer.addEventListener("click", function () {
+      window.open(
+        "https://www.facebook.com/profile.php?id=100011104877211&mibextid=ZbWKwL"
+      );
+    });
+  }
+
+
   var buttonOpenTabRedContainer1 = document.getElementById("buttonOpenTabRedContainer1");
   if (buttonOpenTabRedContainer1) {
       buttonOpenTabRedContainer1.addEventListener("click", function () {
