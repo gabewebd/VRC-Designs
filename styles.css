@@ -1015,7 +1015,6 @@ td {
 }
 .projects-cards1 {
     align-self: stretch;
-    border-radius: 60.53px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -1030,7 +1029,6 @@ td {
 
 .projects-cards2 {
     align-self: stretch;
-    border-radius: 60.53px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -1046,7 +1044,6 @@ td {
 
 .projects-cards {
     align-self: stretch;
-    border-radius: 60.53px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
