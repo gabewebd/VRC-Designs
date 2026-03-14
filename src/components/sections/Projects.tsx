@@ -45,7 +45,7 @@ export default function Projects() {
               
               {/* Desktop Overlay Button (Hidden on Mobile) */}
               <div className="hidden md:flex absolute inset-0 items-center justify-center transition-all duration-500 opacity-0 group-hover:opacity-100">
-                <Button href={projectsContent.projects[0].link} external icon>
+                <Button href={projectsContent.projects[0].link} icon>
                   View Full Project
                 </Button>
               </div>
@@ -57,7 +57,7 @@ export default function Projects() {
               
               {/* Mobile Button (Visible only on Mobile) */}
               <div className="mt-6 md:hidden w-full">
-                <Button href={projectsContent.projects[0].link} external icon className="w-full">
+                <Button href={projectsContent.projects[0].link} icon className="w-full">
                   View Full Project
                 </Button>
               </div>
@@ -79,7 +79,7 @@ export default function Projects() {
                 />
               </div>
               <div className="hidden md:flex absolute inset-0 items-center justify-center transition-all duration-500 opacity-0 group-hover:opacity-100">
-                <Button href={projectsContent.projects[1].link} external icon>
+                <Button href={projectsContent.projects[1].link} icon>
                   View Full Project
                 </Button>
               </div>
@@ -88,7 +88,7 @@ export default function Projects() {
               <h3 className="font-serif text-3xl text-charcoal">{projectsContent.projects[1].title}</h3>
               <p className="mt-3 text-base text-charcoal/60 leading-relaxed max-w-md">{projectsContent.projects[1].description}</p>
               <div className="mt-6 md:hidden w-full">
-                <Button href={projectsContent.projects[1].link} external icon className="w-full">
+                <Button href={projectsContent.projects[1].link} icon className="w-full">
                   View Full Project
                 </Button>
               </div>
@@ -110,7 +110,7 @@ export default function Projects() {
                 />
               </div>
               <div className="hidden md:flex absolute inset-0 items-center justify-center transition-all duration-500 opacity-0 group-hover:opacity-100">
-                <Button href={projectsContent.projects[2].link} external icon>
+                <Button href={projectsContent.projects[2].link} icon>
                   View Full Project
                 </Button>
               </div>
@@ -119,7 +119,7 @@ export default function Projects() {
               <h3 className="font-serif text-3xl text-charcoal">{projectsContent.projects[2].title}</h3>
               <p className="mt-3 text-base text-charcoal/60 leading-relaxed max-w-md">{projectsContent.projects[2].description}</p>
               <div className="mt-6 md:hidden w-full">
-                <Button href={projectsContent.projects[2].link} external icon className="w-full">
+                <Button href={projectsContent.projects[2].link} icon className="w-full">
                   View Full Project
                 </Button>
               </div>
